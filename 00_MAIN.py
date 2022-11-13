@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-
+#
 
 #################################################
 # apprendre à logger
