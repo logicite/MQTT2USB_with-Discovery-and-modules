@@ -1,0 +1,18 @@
+{
+  "MODULE_ONLY":
+  [
+    "367777",
+    "52128C",
+    "BA4812",
+    "BB633A",
+    "339697",
+    "45A023"
+  ],
+
+  "TOPICS":
+  [
+    ["thermometre/scan_interval", ""],
+    ["thermometre/scan_last", ""]
+  ]
+
+}

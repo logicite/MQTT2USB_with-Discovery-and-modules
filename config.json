@@ -1,0 +1,20 @@
+{
+  "log_level": "INFO",
+  "log_file": "/var/log/z_mqtt2usb/01.log",
+
+  "MQTT_HOST": "jarvis.artds",
+  "MQTT_PORT": 1883,
+  "MQTT_KEEPALIVE": 90,
+  "MQTT_CLIENTID" : "jarvis_arduino01",
+  "MQTT_USER": "user",
+  "MQTT_PASSWORD": "password",
+
+  "USB_PORT": "",
+
+  "TOPICS": [
+  ],
+
+  "DISCOVERY_prefix": "homeassistant",
+  "DISCOVERY": [
+  ]
+}

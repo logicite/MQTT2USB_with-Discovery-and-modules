@@ -1,0 +1,28 @@
+{
+  "TOPICS": [
+    ["environn/IOT", "EI"],
+    ["environn/therm","ET"]
+  ],
+
+  "DISCOVERY":
+  [
+    [ "binary_sensor",
+    { 
+      "name": "Thermostat",
+      "unique_id": "thermostat-secours",
+      "device_class": "heat",
+      "state_topic": "environn/therm/nb",
+      "payload_on": "1",
+      "payload_off": "0",
+      "value_template": "{{ value_json.thermostat | is_defined }}",
+
+      "dev": {
+        "identifiers": ["Thermostat"],
+        "manufacturer": "Logicite",
+        "model": "Leroy Merlin",
+        "name": "Thermostat de secours"
+      }
+    }
+    ]
+  ]
+}

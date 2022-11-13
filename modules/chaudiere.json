@@ -1,0 +1,44 @@
+{
+  "TOPICS":
+  [
+    ["chaud/IOT", "CI"],
+    ["chaud/rad-autor","CR"],
+    ["chaud/rad-4tps", "CD"]
+  ],
+
+  "DISCOVERY":
+  [
+    [ "sensor",
+      {
+        "name": "Radiateurs durée restante",
+        "unique_id": "radiateurs-autorises",
+        "state_topic": "chaud/rad-autor/nb",
+        "unit_of_measurement": "min",
+        "value_template": "{{ value_json.rad-autor | is_defined }}",
+        "dev":
+        {
+          "identifiers": ["Chaudiere"],
+          "manufacturer": "Logicite",
+          "model": "Frisquet",
+          "name": "Chaudière hack"
+        }
+      }
+    ],
+    [ "sensor",
+      {
+        "name": "Radiateurs 4 temps",
+        "unique_id": "radiateurs-tps",
+        "state_topic": "chaud/rad-tps/nb",
+        "command_topic": "chaud/rad-tps/sb",
+        "value_template": "{{ value_json.rad-tps | is_defined }}",
+        "dev":
+        {
+          "identifiers": ["Chaudiere"],
+          "manufacturer": "Logicite",
+          "model": "Frisquet",
+          "name": "Chaudière hack"
+        }
+      }
+    ]
+  ]
+}
